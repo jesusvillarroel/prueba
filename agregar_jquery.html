@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	
+	.micontenedor{
+		
+		background-color: #0AD447;
+	}	
+	
+</style>	
+<script src="Jquery/jquery-1.6.3.min.js"></script>	
+<script>
+	
+	$(document).ready(function(){
+		
+		//$("#errores ").html("<p> lo que hace es reemplazar selector por otro(h2 a p)</p>");
+		$("#errores").append("<p>Agrega contenido al final</p>");
+		$("#errores").prepend("<p>Agrega contenido al comienzo</p>");
+		$("#errores h2").text("sustituye el texto por otro");
+		// before coloca el elemento al principio,fuera del contenedor al que hace referencia
+		// after coloca el elemento al final,fuera del contenedor al que hace referencia
+	});
+	
+	
+</script>	
+	
+</head>
+
+<body>
+	<div id="contenedor">
+	
+		<div id="errores" class="micontenedor">
+		
+			<h2>Errores	</h2>
+		
+		</div>
+	
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	
+<script src="Jquery/jquery-1.6.3.min.js"></script>
+<script>
+	function validar()
+	{
+		
+		var nom_usuario=document.getElementById("usuario").value;
+		
+		if(nom_usuario=="")
+		{
+			$("#usuario").after("<p id='oculto'>Campo obligatorio</p>");
+		}
+		else
+		{
+			$("#oculto").hide();
+		}
+	}
+	
+</script>	
+</head>
+
+<body>
+	<form>
+		<input type="text" id="usuario" onBlur="validar()"></br>
+		<input type="text" id="email"></br>
+		<input type="text" id="telefono"></br>
+		<input type="button" value="Dale">
+	</form>
+</body>
+</html>

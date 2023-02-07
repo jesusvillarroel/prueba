@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+	<input type="button" id="boton">
+	<input type="button" id="boton2">
+	<input type="text" id="mitexto">
+	<script>
+		var miboton=document.getElementById("boton");
+		var miboton2=document.getElementById("boton2");
+		var micuadro=document.getElementById("mitexto");
+		miboton.style.width="250px";//propiedad ancho del elemento
+		miboton.style.height="50px";//la altura del elemento
+		miboton.style.backgroundColor="red";//color de fondo del elemento
+		miboton2.style.width="150px";
+		miboton2.style.height="30px";
+		miboton2.style.background="yellow";
+		miboton2.focus();//colocar el focus al elemento , el puntero se desdlaza al ese elemento
+		micuadro.value=("Escribe aqui...");
+		
+	
+	</script>
+</body>
+</html>

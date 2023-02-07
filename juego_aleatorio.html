@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>juego de acierto</title>
+<script>
+	var aleatorio=Math.round(Math.random()*100);//random devuelve nro entre 0 y 1, round redondea los numeros decimales a enteros
+	var num,intentos;
+	num=0;
+	intentos=0;
+	
+	do{
+		num=prompt("Ingrese un numero entre 0 y 100");
+		if(aleatorio>parseInt(num))
+		{
+			alert("mas alto");
+		}
+		else if(aleatorio<parseInt(num))
+		{
+			alert("mas bajo");
+		}
+		
+		intentos++;
+		
+	}while(aleatorio!=parseInt(num));
+	document.write("Lograste adivinar el numero en :"+ intentos);
+	
+</script>	
+</head>
+
+<body>
+</body>
+</html>

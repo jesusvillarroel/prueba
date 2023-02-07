@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss3.css">
+<script>
+	var articulos=["Zapatilla","Camiseta","Pantalon","Boxer"];//declarando arrays
+	//var articulos=new Array("Zapatilla","Camiseta","Pantalon","Boxer");//Otra manera de declarar
+	//var articulos=[];// array vacio, para posterior llenarlo con elementos
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+		  document.write("<p> El primer elemento es <strong>");
+		  document.write(articulos[0]+"</strong></p>");
+		  document.write("<p> El ultimo elemento es <strong>");
+		  document.write(articulos[articulos.length-1]+"</strong></p>");//lenght me da la cantidad de elemento
+		  articulos.unshift("Balon");// agrega elemento al principio del array
+		  document.write("<p> El nuevo elemento agregado es <strong>");
+		  document.write(articulos[0]+"</strong></p>");
+		  articulos.push(prompt("Ingrese el nuevo articulo"));//agregea elemeto al final del array
+		  document.write("<p> El  nuevo ultimo elemento es <strong>");
+		  document.write(articulos[articulos.length-1]+"</strong></p>");
+		  articulos.shift();//elimina el primer elemento
+		  document.write("<p> El primer elemento es <strong>");
+		  document.write(articulos[0]+"</strong></p>");
+		  articulos.pop();//elimina el ultimo elemento
+		
+		
+		
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

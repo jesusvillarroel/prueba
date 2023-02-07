@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora con condicional</title>
+	<script>
+	
+		var num1=prompt("ingrese numero 1");
+		var num2=prompt("ingrese numero 2");
+		//isNaN(num) verifica que no es un numero
+		if(!isNaN(num1) && !isNaN(num2))
+		{
+			var operacion=prompt("Elejia el tipo de operacion.(+,-,*,/)");
+		
+			if(operacion=="+")
+			{
+				/*parseInt(num1);//cambia de texto a entero siempre y cuando se pueda
+				typeof(num1);//devueleve el tipo de dato*/
+				alert(parseInt(num1)+parseInt(num2));
+
+			}else if(operacion=="-")
+					 {
+
+					 alert(parseInt(num1)-parseInt(num2));
+
+					 }
+			else if(operacion=="*")
+				{
+					alert(parseInt(num1)*parseInt(num2));
+				}
+			else
+				{
+					alert(parseInt(num1)/parseInt(num2));
+				}
+		}
+		else{
+			
+			alert("solo se permite numuero");
+		}
+	
+	
+	</script>
+</head>
+
+<body>
+</body>
+</html>
